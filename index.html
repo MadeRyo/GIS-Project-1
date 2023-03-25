@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas GIS</title>
+  </head>
+  <body class=>
+      <div id="map" class="map"></div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" onsubmit="setTimeout(function(){window.location.reload();},2000);">
+      <div class="modal-content">
+        <span class="close">X</span>
+        <div class="modal-title">
+          <h2 class="text-lg font-bold">Tambah Marker</h2>
+        </div>
+        <form>
+          <div class="modal-form">
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" name="latitude" class="form-input" disabled />
+          </div>
+
+          <div class="modal-form">
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" name="longitude" class="form-input" disabled />
+          </div>
+
+          <div class="modal-form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="..."/>
+          </div>
+
+          <div class="modal-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="..." />
+          </div>
+
+          <div class="modal-form">
+            <label for="address">Alamat</label>
+            <input type="text" id="address" name="address" class="form-input" required placeholder="..." />
+          </div>
+
+          <div class="modal-form">
+            <label for="phone">No.Telp</label>
+            <input type="phone" id="phone" name="phone" class="form-input" required placeholder="..." />
+          </div>
+
+          <div class="save-btn">
+            <button
+              type="submit"
+              value="Save"
+              >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

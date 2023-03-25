@@ -1,0 +1,70 @@
+body {
+  padding: 20px;
+  font-family: customFont;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url(Britannic-Bold-Regular.ttf);
+}
+
+.map {
+    margin: 0 auto;
+    height: 620px;
+    width: 1280px;
+    border-radius: 10px;
+    border: 7px yellow solid;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: (50,50);
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 1000;
+  display: none;
+  font-family: customFont;
+  border: 3px yellow solid;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content span {
+  margin-left: 95%;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 15px;
+}
+
+.modal-form {
+  padding-top: 10px;
+}
+
+.modal-form label {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-input {
+  float: right;
+  width: 50%;
+}
+
+.save-btn {
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.save-btn button {
+  margin-left: 24%;
+  width: 150px;
+  border-radius: 8px;
+}
